@@ -1,0 +1,8 @@
+ts = 0:0.1:10
+c0 = [1, 10, 0, 0]
+[t,v]=ode45(@rates,ts,c0);       
+[t,v]                             
+% % % plot(t,v), grid,                     
+% % % gtext(¡®x(t)¡¯), gtext(¡®y(t)¡¯), pause
+% % % plot(v(:,1),v(:,2)), grid,              
+% % % gtext(¡®x¡¯), gtext(¡®y¡¯)
