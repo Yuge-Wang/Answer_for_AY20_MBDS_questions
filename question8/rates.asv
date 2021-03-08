@@ -1,9 +1,0 @@
-function [v_E, v_S, v_ES, v_P] = rates(c_E, c_S, c_ES, c_P)
-% C is short for concentration.
-%   此处显示详细说明
-v_ES = k1 * c_E * c_S - k2 * c_ES - k3 * c_ES;
-v_P = k3 * c_ES;
-v_S = k2 * c_ES - k1 * c_E * c_S;
-v_E = - k1 * c_E * c_S - k2 * c_ES - k3 * c_ES;
-end
-
